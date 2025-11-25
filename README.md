@@ -168,23 +168,23 @@ cd ..
 Create the dockerfile of docker-compose
 Content for dockerfile
 
-version: "3.8"
-services: 
-  backend:
-    build:
-      context: ./backend
-      dockerfile: dockerfile
-    ports:
-      - "8080:8080"
+--version: "3.8"
+--services: 
+  --backend:
+    --build:
+      --context: ./backend
+      --dockerfile: dockerfile
+    --ports:
+      -- - "8080:8080"
  
 
-  frontend:
-    build: 
-      context: ./frontend 
-      dockerfile: dockerfile
-    ports:
-      - "80:80" 
-    depends_on:
-       - backend
+  --frontend:
+    --build: 
+      --context: ./frontend 
+      --dockerfile: dockerfile
+    --ports:
+       -- - "80:80" 
+    --depends_on:
+      -- - backend
 
 
