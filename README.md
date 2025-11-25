@@ -54,6 +54,8 @@ create new database and user
 
 ```shell
 CREATE DATABASE student_db;
+```
+```shell
 GRANT ALL PRIVILEGES ON springbackend.* TO 'username'@'localhost' IDENTIFIED BY 'your_password';
 ```
 replace the username and your_password which you have created
